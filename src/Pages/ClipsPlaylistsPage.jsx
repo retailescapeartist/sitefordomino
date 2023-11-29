@@ -21,7 +21,6 @@ const ClipsPlaylistsPage = () => {
           <h2>Clip of The Week</h2>
           <div className="video-box">
             {/* Add your embedded video here */}
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/BaYUM6W5fxI?si=K_Fgf-C2aeYIeWBg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           </div>
         </div>
 
