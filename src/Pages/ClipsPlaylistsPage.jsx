@@ -10,7 +10,6 @@ const ClipsPlaylistsPage = () => {
         {/* Twitch Stream Box */}
         <div className="twitch-stream-box">
           {/* Replace 'your_twitch_channel' with your actual Twitch channel name */}
-          <iframe src="https://clips.twitch.tv/embed?clip=FastSavoryCobraPermaSmug&parent=http://localhost:3000/clips-playlists" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
         </div>
       </div>
 
