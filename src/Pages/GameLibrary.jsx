@@ -28,11 +28,7 @@ const GameLibraryPage = () => {
         console.error('Error fetching CSV data:', error);
       });
   };
-
-  useEffect(() => {
-    fetchCSVData();
-  }, []);
-
+  
   function parseCSV(csvText) {
     const rows = csvText.split(/\r?\n/);
     const headers = rows[0].split(',');
