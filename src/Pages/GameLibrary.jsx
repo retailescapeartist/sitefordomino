@@ -1,5 +1,3 @@
-// GameLibraryPage.jsx
-
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import './GameLibrary.css';
@@ -10,10 +8,6 @@ const GameLibraryPage = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
-
-  useEffect(() => {
-    fetchCSVData();
-  }, []);
 
   const fetchCSVData = () => {
     const csvUrl =
@@ -34,6 +28,10 @@ const GameLibraryPage = () => {
         console.error('Error fetching CSV data:', error);
       });
   };
+
+  useEffect(() => {
+    fetchCSVData();
+  }, []);
 
   function parseCSV(csvText) {
     const rows = csvText.split(/\r?\n/);
