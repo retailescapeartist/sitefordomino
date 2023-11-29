@@ -1,0 +1,31 @@
+/* ComputerSpecsPage.css */
+
+.center-content {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #1c1c1c; /* Dark background color */
+    color: #fff; /* Light text color for better readability on dark background */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjust box shadow color for contrast */
+    border-radius: 8px;
+  }
+  
+  .computer-specs h1 {
+    font-size: 28px;
+    color: #fff; /* Light text color for better readability on dark background */
+    margin-bottom: 20px;
+  }
+  
+  .computer-specs ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .computer-specs ul li {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* ... Add more styles as needed ... */
+  
