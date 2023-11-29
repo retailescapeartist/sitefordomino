@@ -9,10 +9,6 @@ const GameLibraryPage = () => {
   const [error, setError] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
 
-  const fetchCSVData = () => {
-    const csvUrl =
-      'https://docs.google.com/spreadsheets/d/e/2PACX-1vRWyAFb6t7r9nxy3YbcR4bb0XOVwyvNBsRU_j7vumoFBphVSUamXBgEWuDHZIbiWQ/pub?gid=1635913807&single=true&output=csv';
-
     axios
       .get(csvUrl)
       .then((response) => {
@@ -28,7 +24,7 @@ const GameLibraryPage = () => {
         console.error('Error fetching CSV data:', error);
       });
   };
-  
+
   function parseCSV(csvText) {
     const rows = csvText.split(/\r?\n/);
     const headers = rows[0].split(',');
