@@ -1,10 +1,11 @@
-// components/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.css';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='navbar'>
+      <img src='https://picsum.photos/200/300' alt='domino'></img>
       <ul>
         <li>
           <Link to="/">Home</Link>
@@ -15,7 +16,6 @@ const Navbar = () => {
         <li>
           <Link to="/game-library">Game Library</Link>
         </li>
-        {/* Add more navigation links as needed */}
       </ul>
     </nav>
   );

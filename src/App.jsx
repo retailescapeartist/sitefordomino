@@ -1,8 +1,8 @@
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
+import Navbar from './Pages/Navbar';
+import Footer from './Pages/Footer';
 import HomePage from './Pages/HomePage';
 import SchedulePage from './Pages/SchedulePage';
 import ArtShowcasePage from './Pages/ArtShowcasePage';
