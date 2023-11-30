@@ -1,0 +1,78 @@
+.art-showcase-content {
+    padding-top: 100px; /* Adjust this value based on your navbar's height */
+    height: calc(100vh - 100px); /* Adjust the height based on your design, subtracting the navbar height */
+    text-align: center; /* Center the content */
+  }
+  
+  .art-page-wrapper {
+    width: 100%; /* Full width */
+    margin: 20px auto;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+  }
+  
+  
+  .fixed-image-container {
+    position: sticky;
+    top: 0;
+  }
+  
+  .art-page-container {
+    width: calc(16.6667% - 6px); /* Approximately 16.6667% for a maximum of 6 pictures per row */
+    overflow: hidden;
+    height: fit-content;
+    margin: 3px;
+    padding: 6px;
+    display: block;
+    float: left;
+    border-radius: 15px;
+    position: relative;
+  }
+  
+  .art-page-container img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    overflow: hidden;
+    cursor: pointer;
+    transition-duration: 0.3s;
+  }
+  
+  .art-title,
+  .art-artist {
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    text-shadow: 1px 5px 10px black;
+    transition-duration: 0.3s;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .art-title {
+    top: 35%;
+    font-weight: bold;
+    font-size: 1.6em;
+  }
+  
+  .art-artist {
+    top: 70%;
+    max-width: 80%;
+    text-align: center;
+    font-size: 1em;
+  }
+  
+  .art-page-container:hover img {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+    filter: grayscale(50%);
+    opacity: 0.7;
+  }
+  
+  .art-page-container:hover span {
+    color: white;
+    display: block;
+    transition-duration: 0.3s;
+  }

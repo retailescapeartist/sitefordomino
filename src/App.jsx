@@ -1,6 +1,7 @@
 // App.jsx
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css'
 import Navbar from './Pages/Navbar';
 import Footer from './Pages/Footer';
 import HomePage from './Pages/HomePage';
@@ -10,7 +11,6 @@ import GameReviewsPage from './Pages/GameReviewsPage';
 import RedemptionsListPage from './Pages/RedemptionsListPage';
 import ClipsPlaylistsPage from './Pages/ClipsPlaylistsPage';
 import ComputerSpecsPage from './Pages/ComputerSpecsPage';
-import './App.css'
 
 const App = () => {
   return (
