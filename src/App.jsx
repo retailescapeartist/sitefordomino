@@ -11,6 +11,7 @@ import GameReviewsPage from './Pages/GameReviewsPage';
 import RedemptionsListPage from './Pages/RedemptionsListPage';
 import ClipsPlaylistsPage from './Pages/ClipsPlaylistsPage';
 import ComputerSpecsPage from './Pages/ComputerSpecsPage';
+import GameLibraryPage from './Pages/GameLibraryPage';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
           <Route path="/redemptions-list" element={<RedemptionsListPage />} />
           <Route path="/clips-playlists" element={<ClipsPlaylistsPage />} />
           <Route path="/computer-specs" element={<ComputerSpecsPage />} />
+          <Route path="/game-library" element={<GameLibraryPage />} />
           {/* Add routes for other pages */}
         </Routes>
 
