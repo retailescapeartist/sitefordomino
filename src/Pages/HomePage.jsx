@@ -1,6 +1,7 @@
 import './HomePage.css'
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
+import domino from '../../src/assets/img/domino427-logo.png'
 
 const HomePage = () => {
   return (
@@ -23,7 +24,7 @@ const HomePage = () => {
       </div>
       <div className='main-img'>
           <div className='domino-imag'>
-            <img src='https://picsum.photos/200/300' alt='' />
+            <img src={domino} alt='' />
             <h1 className='profile-name'>Domino427</h1>
             <p className='profile-description'>Short Description</p>
           </div>
