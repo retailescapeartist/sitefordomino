@@ -1,0 +1,48 @@
+.clips-playlists-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+.page-title {
+    grid-column: span 4;
+    align-items: center;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* clip of the week to the left */
+
+.clip-of-week {
+    grid-area: 2;
+}
+
+.movie-suggestion {
+    grid-area: 2/4;
+}
+
+.music {
+    grid-area: 2/2;
+}
+
+.music li {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.movies {
+    grid-area: 2/3;
+}
+
+.movies li {
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

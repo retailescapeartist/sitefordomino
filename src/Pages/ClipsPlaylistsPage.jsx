@@ -3,8 +3,39 @@ import './ClipsPlaylistsPage.css';
 
 const ClipsPlaylistsPage = () => {
   return (
-    <h1>ClipsPlaylistsPage</h1>
+    <div className='clips-playlists-container'>
+      <h1 className='page-title'>Clips & Playlists</h1>
+      <div className='clip-of-week'>
+        <h1>Clip of The Week</h1>
+        <div className='clip-player'>
+        <iframe title='weekly-clip' src="https://clips.twitch.tv/embed?clip=FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI&parent=www.example.com" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
+        </div>
+      </div>
+      <div className='music'>
+        <h1>Music</h1>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </div>
+      <div className='movies'>
+        <h1>Movies</h1>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+      </div>
+      <div className='movie-suggestion'>
+        <h1>Movie Suggestion</h1>
+        <div className='clip-player'>Link to trailer</div>
+      </div>
+    </div>
   );
 };
 
 export default ClipsPlaylistsPage;
+/* Layout for clips and playlists
+Title
+Clip of the week
+Move Suggestion
+Music playlist
+Movies playlist
+*/ 
