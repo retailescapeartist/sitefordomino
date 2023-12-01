@@ -19,6 +19,12 @@ const HomePage = () => {
             <Link to='/computer-specs'>
               <button className='btn btn-primary03'>Computer Specs</button>
             </Link>
+            <Link to="https://twitter.com/domino_427" target="_blank">
+              <button className='btn btn-primary06'>Twitter</button>
+            </Link>
+            <Link to='https://www.tiktok.com/@domino_427?lang=en' target='_blank'>
+              <button className='btn btn-primary06'>TikTok</button>
+            </Link>
           </li>
         </ul>
       </div>
@@ -40,6 +46,12 @@ const HomePage = () => {
             </Link>
             <Link to='/game-library'>
               <button className='btn btn-primary06'>Game Library</button>
+            </Link>
+            <Link to="https://www.twitch.tv/domino427" target="_blank">
+              <button className='btn btn-primary06'>Twitch</button>
+            </Link>
+            <Link to="https://www.youtube.com/@domino427family" target='_blank'>
+              <button className='btn btn-primary06'>YouTube</button>
             </Link>
           </li>
         </ul>
