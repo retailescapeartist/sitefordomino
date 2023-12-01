@@ -23,10 +23,12 @@
 
 .movie-suggestion {
     grid-area: 2/4;
+    grid-column: end;
 }
 
 .music {
-    grid-area: 2/2;
+    grid-area: 3/6;
+    grid-column: end;
 }
 
 .music li {
@@ -37,7 +39,7 @@
 }
 
 .movies {
-    grid-area: 2/3;
+    grid-area: 3/1;
 }
 
 .movies li {
