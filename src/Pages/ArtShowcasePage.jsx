@@ -5,66 +5,55 @@ const ArtShowcasePage = () => {
   return (
     <div className="art-showcase-content">
       <h1>Art Showcase</h1>
-      <div className='art-page-wrapper'>
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+      <div className='gallery-grid'>
+        <div className='gallery-item gallery-grid-row-2 gallery-grid-col-2'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
 
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+        <div className='gallery-item'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
 
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+        <div className='gallery-item'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
 
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+        <div className='gallery-item'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
 
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+        <div className='gallery-item'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
 
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
+        <div className='gallery-item'>
+          <img className='gallery-grid-col-2 gallery-grid-row-2' src='https://picsum.photos/200/300' alt=''></img>
+          <div className='overlay'>
+            <h1>Title</h1>
+            <p>Description</p>
+          </div>
         </div>
-
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
-        </div>
-
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
-        </div>
-
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
-        </div>
-
-        <div className='art-page-container fixed-image-container'>
-          <img src='https://picsum.photos/200/300' alt='domino' />
-          <span className='art-title'>Title Goes Here</span>
-          <span className='art-artist'>Artist Goes Here</span>
-        </div>
+        {/* Repeat similar structure for other gallery items */}
       </div>
     </div>
   );

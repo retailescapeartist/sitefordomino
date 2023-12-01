@@ -1,11 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css';
+import '../App.css'
+import dominologo from "../../src/assets/img/domino427-logo-no-dominos.png"
 
 const Navbar = () => {
   return (
     <nav className='navbar'>
-      <img src='https://picsum.photos/200/300' alt='domino'></img>
+      <img src={dominologo} alt='domino'></img>
       <ul>
         <li>
           <Link to="/">Home</Link>
