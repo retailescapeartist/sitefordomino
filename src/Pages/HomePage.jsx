@@ -1,27 +1,47 @@
+import './HomePage.css'
 import React from 'react';
 import { Link } from 'react-router-dom';
 
 const HomePage = () => {
   return (
     <>
-    <section>
-    <div className='hero-section'>
-          <h1>Welcome to Domino's Stack!</h1>
-          <img src='https://picsum.photos/200/300' alt='domino'></img>
+    <div className='home-container'>
+      <div className='btns-left'>
+        <ul className='btns-no-style'>
+          <li>
+            <Link to='/game-reviews'>
+              <button className='btn btn-primary01'>Game Reviews</button>
+            </Link>
+            <Link to='/schedule'>
+              <button className='btn btn-primary02'>Schedule</button>
+            </Link>
+            <Link to='/computer-specs'>
+              <button className='btn btn-primary03'>Computer Specs</button>
+            </Link>
+          </li>
+        </ul>
+      </div>
+      <div className='main-img'>
+          <div className='domino-imag'>
+            <img src='https://picsum.photos/200/300' alt='' />
+            <h1 className='profile-name'>Domino427</h1>
+            <p className='profile-description'>Short Description</p>
+          </div>
         </div>
-    </section>
-    <div className='container'>
-      <div className='buttons-container'>
-        <div className='buttons-container-left'>
-          <button className='button'><Link to="/game-reviews">Game Reviews</Link></button>
-          <button className='button'><Link to="/schedule">Schedule</Link></button>
-          <button className='button'><Link to="/computer-specs">Computer Specs</Link></button>
-        </div>
-        <div className='buttons-container-right'>
-          <button className='button'><Link to="/art-showcase">Art Showcase</Link></button>
-          <button className='button'><Link to="/clips-playlists">Clips & Playlists</Link></button>
-          <button className='button'><Link to="/art-showcase">Game Library</Link></button>
-        </div>
+        <div className='btns-right'>
+        <ul className='btns-no-style'>
+          <li>
+            <Link to='/clips-playlists'>
+              <button className='btn btn-primary04'>Clips & Playlists</button>
+            </Link>
+            <Link to='/art-showcase'>
+              <button className='btn btn-primary05'>Art Showcase</button>
+            </Link>
+            <Link to='/game-library'>
+              <button className='btn btn-primary06'>Game Library</button>
+            </Link>
+          </li>
+        </ul>
       </div>
     </div>
     </>

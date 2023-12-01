@@ -1,0 +1,38 @@
+.home-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px; 
+    align-items: center;
+    margin: auto !important;
+  }
+  
+  .btns-no-style {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .btn {
+    display:block;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+
+  .btns-right {
+    justify-self: end ;
+  }
+  
+  .main-img {
+    text-align: center;
+  }
+  
+  .profile-name {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  
+  .profile-description {
+    margin-top: 10px;
+    font-size: 1rem;
+  }
