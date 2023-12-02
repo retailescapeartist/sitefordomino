@@ -2,10 +2,6 @@ import './HomePage.css'
 import React from 'react';
 import { Link } from 'react-router-dom'
 import domino from '../../src/assets/img/domino427-logo.png'
-import twitch from '../../src/assets/img/twitch_icon.png'
-import twitter from '../../src/assets/img/twitter_social_icon.png'
-import youtube from '../../src/assets/img/youtube_play_video_icon.png'
-import tiktok from '../../src/assets/img/tiktok_logo_social media_icon.png'
 
 const HomePage = () => {
   return (
