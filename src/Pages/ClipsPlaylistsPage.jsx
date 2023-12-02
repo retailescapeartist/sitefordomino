@@ -19,9 +19,9 @@ const ClipsPlaylistsPage = () => {
       </div>
       <div className='movies'>
         <h1>Movies</h1>
-        <li>item 1</li>
-        <li>item 2</li>
-        <li>item 3</li>
+        <li>Movie 1</li>
+        <li>Movie 2</li>
+        <li>Movie 3</li>
       </div>
       <div className='movie-suggestion'>
         <h1 className='content-title'>Movie Suggestion</h1>
