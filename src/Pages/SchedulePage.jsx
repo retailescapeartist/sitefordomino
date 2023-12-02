@@ -1,4 +1,4 @@
-// pages/SchedulePage.jsx
+import "../App.css"
 import React from 'react';
 
 const SchedulePage = () => {
