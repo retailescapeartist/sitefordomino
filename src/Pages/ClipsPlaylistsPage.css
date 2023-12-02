@@ -8,12 +8,13 @@
 }
 
 .page-title {
-    grid-column: span 4;
+    grid-column: span 6;
     align-items: center;
     justify-self: center;
     margin: 0;
     padding: 0;
 }
+
 
 /* clip of the week to the left */
 
@@ -21,14 +22,16 @@
     grid-area: 2;
 }
 
+.clip-of-week
+
 .movie-suggestion {
-    grid-area: 2/4;
+    grid-area: 6;
     grid-column: end;
 }
 
 .music {
-    grid-area: 3/6;
-    grid-column: end;
+    grid-area: 3/4;
+    grid-column: start;
 }
 
 .music li {

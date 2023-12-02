@@ -6,7 +6,7 @@ const ClipsPlaylistsPage = () => {
     <div className='clips-playlists-container'>
       <h1 className='page-title'>Clips & Playlists</h1>
       <div className='clip-of-week'>
-        <h1>Clip of The Week</h1>
+        <h1 className='content-title'>Clip of The Week</h1>
         <div className='clip-player'>
         <iframe title='weekly-clip' src="https://clips.twitch.tv/embed?clip=FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI&parent=https://domino427.netlify.app/" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="620"></iframe>
         </div>
@@ -24,7 +24,7 @@ const ClipsPlaylistsPage = () => {
         <li>item 3</li>
       </div>
       <div className='movie-suggestion'>
-        <h1>Movie Suggestion</h1>
+        <h1 className='content-title'>Movie Suggestion</h1>
         <div className='clip-player'>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/XJMuhwVlca4?si=Cl26NUE4_VlqW79P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
