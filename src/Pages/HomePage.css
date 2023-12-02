@@ -45,7 +45,7 @@
 
 .profile-description {
   margin-top: 10px;
-  font-size: 1rem;
+  font-size: 18px;
 }
 
 .btns-right {
@@ -71,7 +71,7 @@
 @media only screen and (max-width: 768px) {
   .home-container {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr); 
+    grid-template-rows: repeat(3, 1fr); 
     gap: 10px;
     margin: 0;
     padding: 0;
@@ -84,7 +84,7 @@
   }
 
   .domino-img img {
-    width: 300px;
+    width: 200px;
   }
 
   .btns-left,
@@ -103,7 +103,7 @@
 
   .btn {
     width: 100%; 
-    max-width: 200px;
+    max-width: 150px;
   }
   
   .btns-left,

@@ -77,24 +77,12 @@ body {
   }
 
   .navbar img {
-    height: 150px; 
+    order: 2;
+    height: 100px;
+    width: 100px; 
     margin-top: 10px;
   }
 
-  ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: -15px;
-  }
-
-  li {
-    margin: 0;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 22px;
-  }
 
   .footer-container {
     height: 75px;
