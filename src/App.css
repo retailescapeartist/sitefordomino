@@ -45,19 +45,18 @@ a:hover {
 /* footer css */
 
 body {
-  min-height: 100%;
+  position: relative;
+  min-height: 100vh;
 }
 
 .footer-container {
-  position: fixed;
+  position: absolute;
   bottom: 0;
-  left: 0;
   width: 100%;
   background-color: #333;
   color: white;
   text-align: center;
   box-sizing: border-box;
-  height: 50px;
 }
 
 .social-links a {
@@ -81,12 +80,6 @@ body {
     height: 100px;
     width: 100px; 
     margin-top: 10px;
-  }
-
-
-  .footer-container {
-    height: 75px;
-    padding: 10px;
   }
 }
 

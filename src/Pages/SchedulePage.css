@@ -1,0 +1,33 @@
+.schedule {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3, 1fr;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.schedule p{
+    text-align: center;
+}
+
+.saturday {
+    grid-area: 3 / 2;
+}
+
+/* Mobile Design */
+
+@media only screen and (max-width: 768px){
+    .schedule {
+        margin-bottom: 100px;
+        font-size: 14px;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .saturday {
+        grid-area: 4/ span 2;
+    }
+
+    .schedule p{
+        text-align: center;
+    }
+}

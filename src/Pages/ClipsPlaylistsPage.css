@@ -41,3 +41,41 @@
     justify-content: center;
     display: flex;
 }
+
+/* Mobile Design */
+@media only screen and (max-width: 768px) {
+    .clips-playlists-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6 1fr);
+        width: auto;
+        height: auto;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .page-title {
+        font-size: 20px;
+        grid-area: 1;
+    }
+
+    .clip-of-week {
+        font-size: 12px;
+        grid-area: 2;
+    }
+
+    .movie-suggestion {
+        font-size: 12px;
+        grid-area: 3;
+    }
+
+    .movies {
+        font-size: 12px;
+        grid-area: 4;
+    }
+
+    .music {
+        font-size: 12px;
+        grid-area: 5;
+        margin-bottom: 100px;
+    }
+}

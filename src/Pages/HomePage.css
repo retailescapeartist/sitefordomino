@@ -26,7 +26,7 @@
   justify-content: center;
   width: 200px;
   height: 50px;
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -103,11 +103,17 @@
 
   .btn {
     width: 100%; 
-    max-width: 150px;
+    max-width: 150px;;
   }
   
   .btns-left,
   .btns-right {
     justify-self: center;
+  }
+
+  /* paragraph moved in */
+  .profile-description {
+    text-align: left;
+    padding: 20px;
   }
 }
