@@ -18,8 +18,7 @@
 
 .clip-of-week {
     grid-area: 2/1;
-    justify-self: center;
-    align-self: start;
+    text-align: center;
 }
 
 .music {
@@ -43,39 +42,23 @@
 }
 
 /* Mobile Design */
-@media only screen and (max-width: 768px) {
-    .clips-playlists-container{
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6 1fr);
-        width: auto;
-        height: auto;
-        padding: 10px;
-        font-size: 14px;
+@media only screen and (max-width: 600px) {
+    /* Styles for screens with a maximum width of 600px or less */
+    .clips-playlists-container {
+      display: flex;
+      flex-direction: column;
     }
-
-    .page-title {
-        font-size: 20px;
-        grid-area: 1;
-    }
-
-    .clip-of-week {
-        font-size: 12px;
-        grid-area: 2;
-    }
-
+  
+    .clip-of-week,
+    .movies,
+    .music,
     .movie-suggestion {
-        font-size: 12px;
-        grid-area: 3;
+      margin-bottom: 20px; 
     }
 
-    .movies {
-        font-size: 12px;
-        grid-area: 4;
+    .clip-player iframe {
+      width: 100%; 
+      height: 200px;
+      margin-bottom: 100px;
     }
-
-    .music {
-        font-size: 12px;
-        grid-area: 5;
-        margin-bottom: 100px;
-    }
-}
+  }

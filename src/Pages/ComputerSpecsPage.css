@@ -1,2 +1,42 @@
+.center-content {
+  text-align: center;
+  padding: 20px;
+}
 
-  
+h1 {
+  color: #333; /* Adjust text color */
+}
+
+.computer-specs {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: #555; /* Adjust text color */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 767px) {
+  .computer-specs {
+    text-align: left; /* Adjust text alignment for smaller screens */
+  }
+
+  .computer-specs ul {
+    display: block;
+    padding-left: 20px; /* Add some left padding for better readability */
+  }
+
+  .computer-specs li {
+    margin-bottom: 10px;
+  }
+}
