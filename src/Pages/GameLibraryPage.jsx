@@ -46,9 +46,11 @@ const GameLibraryPage = () => {
       <div className="card-container">
         {filteredGames.map((game) => (
           <div className="card" key={game.id}>
-            <img src={game.image} alt={game.game} className="card-image" />
             <div className="card-body">
-              <h5 className="card-title">{game.game}</h5>
+              <h5 className="card-title">{game.game}
+              <br></br>
+              {game.year}
+              </h5>
               <p className="card-platform">{game.platform}</p>
               <p className="card-text">{game.description}</p>
             </div>
@@ -60,3 +62,10 @@ const GameLibraryPage = () => {
 };
 
 export default GameLibraryPage;
+
+/* "year": 2017,
+   "game": "A Hat in Time",
+   "platform": "steam",
+   "finished": "",
+   "started": "",
+   "description"*/
