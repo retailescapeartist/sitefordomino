@@ -1,5 +1,5 @@
 body {
-  background-color: white;
+  background-color: hsl(0, 0%, 90%);
   margin: 0;
   padding: 0;
 }
@@ -13,6 +13,7 @@ body {
   background-color: #333;
   width: 100%;
   height: 50px;
+  font-family: "calibri";
 }
 
 .navbar img {
@@ -46,11 +47,14 @@ a:hover {
 
 .footer-container {
   display: flex;
+  position: fixed;
   flex-direction: column; /* Change the flex direction to column */
   align-items: center;
   background-color: #333;
-  height: 50px;
   padding: 5px;
+  bottom: 0;
+  width: 100%;
+  font-family: "calibri";
 }
 
 .footer-text {

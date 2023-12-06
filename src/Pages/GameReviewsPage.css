@@ -11,6 +11,7 @@
     "main-review . secondary-review"
     ". . third-review";
   margin: 10px;
+  font-family: "calibri";
 }
 
 .main-review,
@@ -47,8 +48,10 @@
       "main-review"
       "secondary-review"
       "third-review";
+    width: 90%;
     height: auto;
     margin: 0 auto;
+    margin-left: 10px;
   }
 
   .reviews-container img {

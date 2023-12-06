@@ -10,6 +10,15 @@ const ClipsPlaylistsPage = () => {
           <h1 className="content-title">Clip of The Week</h1>
           <div className="clip-player">
             {/* Add your clip player content here */}
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wizCyAaMutw?si=Sf_mSfSwQI6jpHYm"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
           </div>
         </div>
         <div className="movies">
@@ -28,7 +37,7 @@ const ClipsPlaylistsPage = () => {
           <h1 className="content-title">Movie Suggestion</h1>
           <div className="clip-player">
             <iframe
-              width="560"
+              width="400"
               height="315"
               src="https://www.youtube.com/embed/XJMuhwVlca4?si=Cl26NUE4_VlqW79P"
               title="YouTube video player"
