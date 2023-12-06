@@ -4,7 +4,6 @@ body {
   padding: 0;
 }
 
-
 /* navigation css */
 
 .navbar {
@@ -12,6 +11,7 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #333;
+  width: 100%;
   height: 50px;
 }
 
@@ -44,43 +44,28 @@ a:hover {
 
 /* footer css */
 
-body {
-  position: relative;
-  min-height: 100vh;
+.footer-container {
+  display: flex;
+  flex-direction: column; /* Change the flex direction to column */
+  align-items: center;
+  background-color: #333;
+  height: 50px;
+  padding: 5px;
 }
 
-.footer-container {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: #333;
+.footer-text {
+  margin-top: 10px; /* Add margin to separate from the links */
+}
+
+.footer-container p {
   color: white;
-  text-align: center;
-  box-sizing: border-box;
+  margin: 0;
 }
 
 .social-links a {
   color: white;
   text-decoration: none;
   margin-right: 10px;
-}
-
-
-/* Mobile styles */
-@media only screen and (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 100px; 
-  }
-
-  .navbar img {
-    order: 2;
-    height: 100px;
-    width: 100px; 
-    margin-top: 10px;
-  }
 }
 
 /* SchedulePage styling */
@@ -101,4 +86,11 @@ body {
   font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 15px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 960px) {
+  .navbar {
+    width: 100%;
+  }
 }

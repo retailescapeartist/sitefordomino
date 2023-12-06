@@ -1,17 +1,17 @@
 // App.jsx
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import './App.css'
-import Navbar from './Pages/Navbar';
-import Footer from './Pages/Footer';
-import HomePage from './Pages/HomePage';
-import SchedulePage from './Pages/SchedulePage';
-import ArtShowcasePage from './Pages/ArtShowcasePage';
-import GameReviewsPage from './Pages/GameReviewsPage';
-import RedemptionsListPage from './Pages/RedemptionsListPage';
-import ClipsPlaylistsPage from './Pages/ClipsPlaylistsPage';
-import ComputerSpecsPage from './Pages/ComputerSpecsPage';
-import GameLibraryPage from './Pages/GameLibraryPage';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./Pages/Navbar";
+import Footer from "./Pages/Footer";
+import HomePage from "./Pages/HomePage";
+import SchedulePage from "./Pages/SchedulePage";
+import ArtShowcasePage from "./Pages/ArtShowcasePage";
+import GameReviewsPage from "./Pages/GameReviewsPage";
+import RedemptionsListPage from "./Pages/RedemptionsListPage";
+import ClipsPlaylistsPage from "./Pages/ClipsPlaylistsPage";
+import ComputerSpecsPage from "./Pages/ComputerSpecsPage";
+import GameLibraryPage from "./Pages/GameLibraryPage";
 
 const App = () => {
   return (
