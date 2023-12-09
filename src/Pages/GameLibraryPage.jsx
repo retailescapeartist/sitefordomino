@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Games from "../data.json";
 import "./GameLibraryPage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const GameLibraryPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -31,36 +33,40 @@ const GameLibraryPage = () => {
   };
 
   return (
-    <section>
-      <div className="game-library-container">
-        <div className="search-bar">
-          <input
-            type="text"
-            placeholder="Search by title"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            onKeyPress={handleKeyPress}
-          />
-          <button onClick={handleSearch}>Search</button>
-          <button onClick={handleReset}>Reset</button>
-        </div>
-        <div className="card-container">
-          {filteredGames.map((game) => (
-            <div className="card" key={game.id}>
-              <div className="card-body">
-                <h5 className="card-title">
-                  {game.game}
-                  <br></br>
-                  {game.year}
-                </h5>
-                <p className="card-platform">{game.platform}</p>
-                <p className="card-text">{game.description}</p>
+    <>
+      <Navbar />
+      <section>
+        <div className="game-library-container">
+          <div className="search-bar">
+            <input
+              type="text"
+              placeholder="Search by title"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              onKeyPress={handleKeyPress}
+            />
+            <button onClick={handleSearch}>Search</button>
+            <button onClick={handleReset}>Reset</button>
+          </div>
+          <div className="card-container">
+            {filteredGames.map((game) => (
+              <div className="card" key={game.id}>
+                <div className="card-body">
+                  <h5 className="card-title">
+                    {game.game}
+                    <br></br>
+                    {game.year}
+                  </h5>
+                  <p className="card-platform">{game.platform}</p>
+                  <p className="card-text">{game.description}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      <Footer />
+    </>
   );
 };
 

@@ -1,9 +1,12 @@
 import "./SchedulePage.css";
 import React from "react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const SchedulePage = () => {
   return (
     <section>
+      <Navbar />
       <div className="app-container">
         <h1>Schedule</h1>
         <p>On these days, I will try to start at 2 EDT (UTC - 4).</p>
@@ -44,6 +47,7 @@ const SchedulePage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

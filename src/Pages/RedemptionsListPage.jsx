@@ -1,9 +1,12 @@
 import React from "react";
-import "./RedemptionsListPage.css"; // Import your CSS file for styling
+import "./RedemptionsListPage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const TwitchRedemptionsListPage = () => {
   return (
     <section>
+      <Navbar />
       <div className="twitch-redemptions-container">
         <h1 className="page-title">Twitch Redemptions</h1>
         <p className="description">
@@ -32,6 +35,7 @@ const TwitchRedemptionsListPage = () => {
           101-500, and 500+
         </p>
       </div>
+      <Footer />
     </section>
   );
 };

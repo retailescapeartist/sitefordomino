@@ -1,9 +1,12 @@
 import React from "react";
 import "./ComputerSpecsPage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ComputerSpecsPage = () => {
   return (
     <section>
+      <Navbar />
       <div className="center-content">
         <h1>Computer Specs</h1>
         <div className="computer-specs">
@@ -22,6 +25,7 @@ const ComputerSpecsPage = () => {
           {/* ... other specs ... */}
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

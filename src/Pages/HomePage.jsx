@@ -1,6 +1,8 @@
 import "./HomePage.css";
 import React from "react";
 import { Link } from "react-router-dom";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import domino from "../../src/assets/img/domino427-logo.png";
 import twitch from "../../src/assets/img/twitch_icon.png";
 import twitter from "../../src/assets/img/twitter_social_icon.png";
@@ -10,6 +12,7 @@ import tiktok from "../../src/assets/img/tiktok_logo_social media_icon.png";
 const HomePage = () => {
   return (
     <>
+      <Navbar />
       <section>
         <div className="home-container">
           <div className="btns-left">
@@ -89,6 +92,7 @@ const HomePage = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </>
   );
 };

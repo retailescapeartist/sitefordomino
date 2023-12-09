@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import "./ArtShowcasePage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ArtShowcasePage = () => {
   useEffect(() => {
@@ -18,6 +20,7 @@ const ArtShowcasePage = () => {
 
   return (
     <section>
+      <Navbar />
       <div className="art-showcase-content">
         <h1>Art Showcase</h1>
         <div className="gallery-grid">
@@ -84,6 +87,7 @@ const ArtShowcasePage = () => {
           {/* Repeat similar structure for other gallery items */}
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

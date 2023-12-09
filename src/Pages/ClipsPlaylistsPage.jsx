@@ -1,9 +1,12 @@
 import React from "react";
 import "./ClipsPlaylistsPage.css";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 
 const ClipsPlaylistsPage = () => {
   return (
     <section>
+      <Navbar />
       <div className="clips-playlists-container">
         <h1 className="page-title">Clips & Playlists</h1>
         <div className="clip-of-week">
@@ -11,13 +14,13 @@ const ClipsPlaylistsPage = () => {
           <div className="clip-player">
             {/* Add your clip player content here */}
             <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/wizCyAaMutw?si=Sf_mSfSwQI6jpHYm"
-              title="YouTube video player"
+              title="TwitchPlayer"
+              src="https://clips.twitch.tv/embed?clip=FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI&parent=https://domino427.netlify.app/"
               frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowfullscreen="true"
+              scrolling="no"
+              height="378"
+              width="620"
             ></iframe>
           </div>
         </div>
@@ -48,6 +51,7 @@ const ClipsPlaylistsPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </section>
   );
 };

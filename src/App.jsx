@@ -2,8 +2,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import Navbar from "./Pages/Navbar";
-import Footer from "./Pages/Footer";
 import HomePage from "./Pages/HomePage";
 import SchedulePage from "./Pages/SchedulePage";
 import ArtShowcasePage from "./Pages/ArtShowcasePage";
@@ -17,8 +15,6 @@ const App = () => {
   return (
     <Router>
       <div>
-        <Navbar />
-
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/schedule" element={<SchedulePage />} />
@@ -30,8 +26,6 @@ const App = () => {
           <Route path="/game-library" element={<GameLibraryPage />} />
           {/* Add routes for other pages */}
         </Routes>
-
-        <Footer />
       </div>
     </Router>
   );
