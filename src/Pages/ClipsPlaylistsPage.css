@@ -22,25 +22,44 @@
   margin: 20px;
 }
 
+button {
+  font-size: 1rem;
+  background-color: #333;
+  border: 1px solid #333;
+  text-align: center;
+  color: #ccc;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+button:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
 .music {
   grid-area: 4/4;
+  text-align: center;
 }
 
 .movies {
   grid-area: 4/1;
+  text-align: center;
 }
 
 .movie-suggestion {
   grid-area: 2/4;
   width: 80%;
+  margin-bottom: 115px;
 }
 
 .music li,
 .movies li {
   list-style-type: none;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
   display: flex;
+  margin: 10px;
 }
 
 /* Mobile Design */

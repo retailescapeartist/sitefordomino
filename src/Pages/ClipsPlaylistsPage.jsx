@@ -10,31 +10,46 @@ const ClipsPlaylistsPage = () => {
       <div className="clips-playlists-container">
         <h1 className="page-title">Clips & Playlists</h1>
         <div className="clip-of-week">
-          <h1 className="content-title">Clip of The Week</h1>
+          <h1 className="content-title">YouTube Clip of The Week</h1>
           <div className="clip-player">
             {/* Add your clip player content here */}
             <iframe
-              title="TwitchPlayer"
-              src="https://clips.twitch.tv/embed?clip=FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI&parent=https://domino427.netlify.app/"
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/wizCyAaMutw?si=Sf_mSfSwQI6jpHYm"
+              title="YouTube video player"
               frameborder="0"
-              allowfullscreen="true"
-              scrolling="no"
-              height="378"
-              width="620"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
             ></iframe>
+            <div>
+              <h3>Twitch Clip</h3>
+              <p>
+                embeds had an issue, so twitch clips can be accessed by clicking
+                the titles below
+              </p>
+              <a
+                className="TwitchLink"
+                href="https://clips.twitch.tv/FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI"
+                target="blank"
+              >
+                {" "}
+                <button>Twitch Clip</button>{" "}
+              </a>
+            </div>
           </div>
         </div>
         <div className="movies">
           <h1>Movies</h1>
-          <li>Movie 1</li>
-          <li>Movie 2</li>
-          <li>Movie 3</li>
+          <li>Avatar</li>
+          <li>Avengers: Endgame</li>
+          <li>Titanic</li>
         </div>
         <div className="music">
           <h1>Music</h1>
-          <li>item 1</li>
-          <li>item 2</li>
-          <li>item 3</li>
+          <li>The Hu</li>
+          <li>Steampowered Giraffe</li>
+          <li>Saint Paul and The Broken Bones</li>
         </div>
         <div className="movie-suggestion">
           <h1 className="content-title">Movie Suggestion</h1>

@@ -3,6 +3,11 @@
   padding: 20px;
 }
 
+.art-title {
+  font-size: 18px;
+  margin: 10px;
+}
+
 .gallery-grid {
   --gap: 16px;
   --num-cols: 6;

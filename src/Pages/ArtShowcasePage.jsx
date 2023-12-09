@@ -34,7 +34,7 @@ const ArtShowcasePage = () => {
               alt=""
             ></img>
             <div className="overlay">
-              <h1>The gift</h1>
+              <h1 className="art-title">The gift</h1>
               <p>Artwork done by MrsCrunch</p>
             </div>
           </div>
@@ -49,7 +49,7 @@ const ArtShowcasePage = () => {
               alt=""
             ></img>
             <div className="overlay">
-              <h1>Musical Hammerheads</h1>
+              <h1 className="art-title">Musical Hammerheads</h1>
               <p>by MrsCrunch</p>
             </div>
           </div>
@@ -64,7 +64,7 @@ const ArtShowcasePage = () => {
               alt=""
             ></img>
             <div className="overlay">
-              <h1>Percila the Chinchilla</h1>
+              <h1 className="art-title">Percila the Chinchilla</h1>
               <p>By KhromaCat</p>
             </div>
           </div>
@@ -79,7 +79,7 @@ const ArtShowcasePage = () => {
               alt=""
             ></img>
             <div className="overlay">
-              <h1>Little Kitty</h1>
+              <h1 className="art-title">Little Kitty</h1>
               <p>By Retailescapeartist</p>
             </div>
           </div>
