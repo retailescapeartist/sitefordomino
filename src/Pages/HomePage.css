@@ -98,6 +98,7 @@
   .btns-left,
   .btns-right {
     grid-area: 2;
+    margin-right: 20px;
   }
 
   .btns-right {

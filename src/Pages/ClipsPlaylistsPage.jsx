@@ -42,9 +42,9 @@ const ClipsPlaylistsPage = () => {
         <div className="movies">
           <h1>Movies</h1>
           <ul>
-            <li>Avatar</li>
-            <li>Avengers: Endgame</li>
-            <li>Titanic</li>
+            <li>Megamind</li>
+            <li>Into The Woods</li>
+            <li>Spiderman: No Way Home</li>
           </ul>
         </div>
         <div className="music">
