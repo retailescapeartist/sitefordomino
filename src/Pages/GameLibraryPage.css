@@ -61,3 +61,9 @@ button {
   font-size: 1rem;
   color: #555;
 }
+
+.introductory-image {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
