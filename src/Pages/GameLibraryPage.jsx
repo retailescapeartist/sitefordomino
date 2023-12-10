@@ -71,10 +71,3 @@ const GameLibraryPage = () => {
 };
 
 export default GameLibraryPage;
-
-/* "year": 2017,
-   "game": "A Hat in Time",
-   "platform": "steam",
-   "finished": "",
-   "started": "",
-   "description"*/

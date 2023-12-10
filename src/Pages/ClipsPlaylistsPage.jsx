@@ -12,48 +12,53 @@ const ClipsPlaylistsPage = () => {
         <div className="clip-of-week">
           <h1 className="content-title">YouTube Clip of The Week</h1>
           <div className="clip-player">
-            {/* Add your clip player content here */}
+            {/* YouTube video */}
             <iframe
               width="560"
               height="315"
               src="https://www.youtube.com/embed/wizCyAaMutw?si=Sf_mSfSwQI6jpHYm"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
-            <div>
-              <h3>Twitch Clip</h3>
-              <p>
-                embeds had an issue, so twitch clips can be accessed by clicking
-                the titles below
-              </p>
-              <a
-                className="TwitchLink"
-                href="https://clips.twitch.tv/FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI"
-                target="blank"
-              >
-                {" "}
-                <button>Twitch Clip</button>{" "}
-              </a>
-            </div>
           </div>
+        </div>
+        <div className="twitch-clip-cards">
+          <h3>Twitch Clip</h3>
+          <p>
+            Embeds had an issue, so Twitch clips can be accessed by clicking the
+            titles below
+          </p>
+          <a
+            className="TwitchLink"
+            href="https://clips.twitch.tv/FlaccidCloudyFlamingoDatBoi-kZF3U23pJ3n_MyMI"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button>Twitch Clip</button>
+          </a>
         </div>
         <div className="movies">
           <h1>Movies</h1>
-          <li>Avatar</li>
-          <li>Avengers: Endgame</li>
-          <li>Titanic</li>
+          <ul>
+            <li>Avatar</li>
+            <li>Avengers: Endgame</li>
+            <li>Titanic</li>
+          </ul>
         </div>
         <div className="music">
           <h1>Music</h1>
-          <li>The Hu</li>
-          <li>Steampowered Giraffe</li>
-          <li>Saint Paul and The Broken Bones</li>
+          <ul>
+            <li>The Hu</li>
+            <li>Steampowered Giraffe</li>
+            <li>Saint Paul and The Broken Bones</li>
+          </ul>
         </div>
         <div className="movie-suggestion">
           <h1 className="content-title">Movie Suggestion</h1>
           <div className="clip-player">
+            {/* Another YouTube video */}
             <iframe
               width="400"
               height="315"
