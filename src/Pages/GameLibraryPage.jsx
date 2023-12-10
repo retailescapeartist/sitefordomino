@@ -99,7 +99,7 @@ const GameLibraryPage = () => {
             style={{ display: showIntro ? "block" : "none" }}
           >
             {/* Your introductory image and text go here */}
-            <img src={Controller} alt="Introductory Image" />
+            <img src={Controller} alt="controller" />
             <p>Welcome! Start typing to search for games.</p>
           </div>
 
