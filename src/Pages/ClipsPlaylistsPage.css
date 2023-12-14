@@ -29,14 +29,15 @@
 }
 
 button {
-  font-size: 1rem;
+  font-size: 0.7rem;
   background-color: #333;
   border: 1px solid #333;
   text-align: center;
   color: #ccc;
-  width: 200px;
+  width: 210px;
   height: 50px;
   border-radius: 10px;
+  margin: 10px;
 }
 
 button:hover {
@@ -56,8 +57,8 @@ button:hover {
 
 .movie-suggestion {
   grid-area: 2/4;
-  width: 80%;
-  margin-bottom: 115px;
+  text-align: center;
+  margin: 20px;
 }
 
 ul {
@@ -79,6 +80,7 @@ ul {
   .clips-playlists-container {
     display: flex;
     flex-direction: column;
+    width: auto;
   }
 
   .clip-of-week,
@@ -89,9 +91,7 @@ ul {
     margin-bottom: 20px;
   }
 
-  .clip-player iframe {
-    width: 100%;
-    height: 200px;
-    margin-bottom: 100px;
+  .clip-player {
+    margin-bottom: 300px;
   }
 }
