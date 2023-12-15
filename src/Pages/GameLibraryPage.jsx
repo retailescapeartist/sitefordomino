@@ -17,19 +17,32 @@ const Popup = ({ content, onClose }) => {
 };
 
 const GameLibraryPage = () => {
+  const [searchType, setSearchType] = useState(""); // "all" or "finished"
   const [searchTerm, setSearchTerm] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState("");
-  const [showIntro, setShowIntro] = useState(true); // Added state for introductory image
+  const [showIntro, setShowIntro] = useState(true);
 
-  const handleSearch = (searchTerm) => {
-    // Filter games based on the search term
-    const filtered = Games.filter((game) => {
+  const handleSearchType = (type) => {
+    setSearchType(type);
+  };
+
+  const handleSearch = (newSearchTerm) => {
+    const filterCondition = (game) => {
       const gameTitle = String(game.game).toLowerCase();
-      return gameTitle.includes(searchTerm.toLowerCase());
-    });
+      const isCompleted = game.finished && game.finished.trim() !== "";
 
-    // Show a popup with live search results as cards
+      if (searchType === "all") {
+        return gameTitle.includes(newSearchTerm.toLowerCase());
+      } else if (searchType === "finished") {
+        return gameTitle.includes(newSearchTerm.toLowerCase()) && isCompleted;
+      }
+
+      return false;
+    };
+
+    const filtered = Games.filter(filterCondition);
+
     setShowPopup(true);
     setPopupContent(
       <div className="card-container">
@@ -53,15 +66,13 @@ const GameLibraryPage = () => {
       </div>
     );
 
-    // Hide the introductory image when the user starts typing
     setShowIntro(false);
   };
 
   const handleReset = () => {
-    // Clear the search term and hide the popup
+    setSearchType("");
     setSearchTerm("");
     setShowPopup(false);
-    // Show the introductory image again
     setShowIntro(true);
   };
 
@@ -70,10 +81,8 @@ const GameLibraryPage = () => {
     setSearchTerm(newSearchTerm);
 
     if (newSearchTerm === "") {
-      // If the search term is empty, reset and hide the popup
       handleReset();
     } else {
-      // Otherwise, perform live search
       handleSearch(newSearchTerm);
     }
   };
@@ -84,26 +93,43 @@ const GameLibraryPage = () => {
       <section>
         <div className="game-library-container">
           <div className="search-bar">
-            <input
-              type="text"
-              placeholder="Search by title"
-              value={searchTerm}
-              onChange={handleInputChange}
-            />
-            <button onClick={() => handleSearch(searchTerm)}>Search</button>
-            <button onClick={handleReset}>Reset</button>
+            {!searchType && (
+              <div>
+                <button onClick={() => handleSearchType("all")}>
+                  Show All Games
+                </button>
+                <button onClick={() => handleSearchType("finished")}>
+                  Show Finished Games
+                </button>
+              </div>
+            )}
+            {searchType && (
+              <div className="search-input">
+                <input
+                  type="text"
+                  placeholder={`Search ${
+                    searchType === "finished" ? "finished" : ""
+                  } games by title`}
+                  value={searchTerm}
+                  onChange={handleInputChange}
+                />
+                <button onClick={() => handleSearch(searchTerm)}>Search</button>
+                <button onClick={handleReset}>Reset</button>
+              </div>
+            )}
           </div>
 
           <div
             className="introductory-image"
             style={{ display: showIntro ? "block" : "none" }}
           >
-            {/* Your introductory image and text go here */}
             <img src={Controller} alt="controller" />
-            <p>Welcome! Start typing to search for games.</p>
+            <p>
+              Welcome! Select a search type and start typing to search for
+              games.
+            </p>
           </div>
 
-          {/* Show the live search results */}
           {showPopup && (
             <Popup content={popupContent} onClose={() => setShowPopup(false)} />
           )}

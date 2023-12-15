@@ -18,3 +18,5 @@
    "started":"",
    "description":""
  } -->
+<!-- put ratchet and clank game in the jason file -->
+<!-- Is there a way to make a search bar to find games that were finished? -->
