@@ -10,3 +10,11 @@
    Everything else seems to be looking good so far.
    Goal is to have the whole site done with by 12/11/2023 at the latest.
  -->
+ <!-- data layout:{
+   "year":"",
+   "game":"",
+   "platform":"",
+   "finished":"",
+   "started":"",
+   "description":""
+ } -->
