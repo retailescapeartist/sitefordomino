@@ -26,8 +26,10 @@ input {
   color: azure;
   font-weight: 800;
   margin: 10px;
+  width: 300px;
 }
 
+/* Updated button styles */
 button {
   margin-bottom: 10px;
   padding: 15px;
@@ -47,6 +49,12 @@ button {
   backdrop-filter: blur(5px);
 }
 
+/* New styles for the button container to center the buttons */
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
 .card-container {
   display: flex;
   flex-wrap: wrap;
@@ -60,7 +68,7 @@ button {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: rgb(113, 104, 241);
+  background-color: hsl(244, 22%, 13%);
 }
 
 .card-image {
@@ -79,7 +87,7 @@ button {
   margin-bottom: 10px;
   color: azure;
   font-weight: 800;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid azure;
 }
 
 .card-platform {

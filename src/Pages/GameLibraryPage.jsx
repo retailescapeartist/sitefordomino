@@ -5,19 +5,22 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Controller from "../assets/img/icons8-game-controller-50.png";
 
-const Popup = ({ content, onClose }) => {
-  return (
-    <div className="popup">
-      <div className="popup-content">
-        {content}
-        <button onClick={onClose}>Close</button>
-      </div>
+const GameCard = ({ game }) => (
+  <div className="card">
+    <div className="card-body">
+      <h5 className="card-title">
+        {game.game}
+        <br />
+        {game.year}
+      </h5>
+      <p className="card-platform">{game.platform}</p>
+      <p className="card-text">{game.description}</p>
     </div>
-  );
-};
+  </div>
+);
 
 const GameLibraryPage = () => {
-  const [searchType, setSearchType] = useState(""); // "all" or "finished"
+  const [searchType, setSearchType] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [showPopup, setShowPopup] = useState(false);
   const [popupContent, setPopupContent] = useState("");
@@ -25,6 +28,28 @@ const GameLibraryPage = () => {
 
   const handleSearchType = (type) => {
     setSearchType(type);
+  };
+
+  const handleShowAllGames = () => {
+    setSearchType("all");
+    setSearchTerm("");
+    setShowPopup(true);
+    handleSearch("");
+  };
+
+  const handleShowFinishedGames = () => {
+    setSearchType("finished");
+    setShowPopup(true);
+
+    setPopupContent(
+      <div className="card-container">
+        {Games.filter(
+          (game) => game.finished && game.finished.trim() !== ""
+        ).map((game) => (
+          <GameCard key={game.id} game={game} />
+        ))}
+      </div>
+    );
   };
 
   const handleSearch = (newSearchTerm) => {
@@ -43,37 +68,15 @@ const GameLibraryPage = () => {
 
     const filtered = Games.filter(filterCondition);
 
-    setShowPopup(true);
     setPopupContent(
       <div className="card-container">
-        {filtered.length === 0 ? (
-          <p>No matching games found.</p>
-        ) : (
-          filtered.map((game) => (
-            <div className="card" key={game.id}>
-              <div className="card-body">
-                <h5 className="card-title">
-                  {game.game}
-                  <br />
-                  {game.year}
-                </h5>
-                <p className="card-platform">{game.platform}</p>
-                <p className="card-text">{game.description}</p>
-              </div>
-            </div>
-          ))
-        )}
+        {filtered.map((game) => (
+          <GameCard key={game.id} game={game} />
+        ))}
       </div>
     );
 
     setShowIntro(false);
-  };
-
-  const handleReset = () => {
-    setSearchType("");
-    setSearchTerm("");
-    setShowPopup(false);
-    setShowIntro(true);
   };
 
   const handleInputChange = (e) => {
@@ -83,8 +86,16 @@ const GameLibraryPage = () => {
     if (newSearchTerm === "") {
       handleReset();
     } else {
+      setShowPopup(true);
       handleSearch(newSearchTerm);
     }
+  };
+
+  const handleReset = () => {
+    setSearchType("");
+    setSearchTerm("");
+    setShowPopup(false);
+    setShowIntro(true);
   };
 
   return (
@@ -95,10 +106,8 @@ const GameLibraryPage = () => {
           <div className="search-bar">
             {!searchType && (
               <div>
-                <button onClick={() => handleSearchType("all")}>
-                  Show All Games
-                </button>
-                <button onClick={() => handleSearchType("finished")}>
+                <button onClick={handleShowAllGames}>Show All Games</button>
+                <button onClick={handleShowFinishedGames}>
                   Show Finished Games
                 </button>
               </div>
@@ -113,25 +122,30 @@ const GameLibraryPage = () => {
                   value={searchTerm}
                   onChange={handleInputChange}
                 />
-                <button onClick={() => handleSearch(searchTerm)}>Search</button>
-                <button onClick={handleReset}>Reset</button>
+                <div className="button-container">
+                  <button onClick={() => handleSearch(searchTerm)}>
+                    Search
+                  </button>
+                  <button onClick={handleReset}>Reset</button>
+                </div>
               </div>
             )}
           </div>
 
-          <div
-            className="introductory-image"
-            style={{ display: showIntro ? "block" : "none" }}
-          >
-            <img src={Controller} alt="controller" />
-            <p>
-              Welcome! Select a search type and start typing to search for
-              games.
-            </p>
-          </div>
+          {showIntro && !searchType && (
+            <div className="introductory-image">
+              <img src={Controller} alt="controller" />
+              <p>
+                Welcome! Select a search type and start typing to search for
+                games.
+              </p>
+            </div>
+          )}
 
           {showPopup && (
-            <Popup content={popupContent} onClose={() => setShowPopup(false)} />
+            <div className="popup">
+              <div className="popup-content">{popupContent}</div>
+            </div>
           )}
         </div>
       </section>

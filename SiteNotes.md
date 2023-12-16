@@ -7,6 +7,7 @@
        2. Need to stylize the twitch card content.
     5. Button for Twitch clip or Title cards?
     6. Fix the movie suggestions player. It isn't lining up properly.
+    7. Domino wanted the search all games to be like it is now, but on Show finished games, jsut display all the games that are marked as y for finished.
    Everything else seems to be looking good so far.
    Goal is to have the whole site done with by 12/11/2023 at the latest.
  -->
