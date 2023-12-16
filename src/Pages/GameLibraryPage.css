@@ -1,6 +1,12 @@
 .game-library-container {
   padding: 20px;
   font-family: "calibri";
+  color: azure;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
 }
 
 .search-bar {
@@ -14,11 +20,31 @@ input {
   padding: 10px;
   margin-right: 10px;
   flex-grow: 1;
+  background-color: transparent;
+  border: 5px solid #333;
+  text-align: center;
+  color: azure;
+  font-weight: 800;
+  margin: 10px;
 }
 
 button {
-  padding: 10px;
-  cursor: pointer;
+  margin-bottom: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 800;
+  background-color: transparent;
+  border: 2px solid #333;
+  text-align: center;
+  color: #ccc;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .card-container {
@@ -30,10 +56,11 @@ button {
 .card {
   width: 300px;
   margin: 20px;
-  border: 1px solid #aca6a6;
+  border: 3px solid #aca6a6;
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgb(113, 104, 241);
 }
 
 .card-image {
@@ -50,16 +77,21 @@ button {
 .card-title {
   font-size: 1.5rem;
   margin-bottom: 10px;
+  color: azure;
+  font-weight: 800;
+  border-bottom: 1px solid black;
 }
 
 .card-platform {
-  color: #888;
+  color: azure;
+  font-weight: 800;
   margin-bottom: 10px;
 }
 
 .card-text {
   font-size: 1rem;
-  color: #555;
+  color: azure;
+  font-weight: 800;
 }
 
 .introductory-image {

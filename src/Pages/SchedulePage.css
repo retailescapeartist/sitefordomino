@@ -8,19 +8,27 @@
   border: 1px solid #8b8787;
   box-shadow: rgba(0, 0, 0, 0.4);
   border-radius: 5px;
+  color: azure;
 }
 
 .app-container h1 {
   border-bottom: 1px solid #8b8787;
+  color: azure;
+}
+
+.app-container p {
+  color: azure;
 }
 
 .schedule p {
   text-align: center;
+  color: azure;
 }
 
 .schedule h1 {
   text-align: center;
   border-bottom: 1px solid #8b8787;
+  color: azure;
 }
 
 .saturday {

@@ -16,8 +16,9 @@
   margin-bottom: 10px;
   padding: 15px;
   font-size: 1rem;
-  background-color: #333;
-  border: 1px solid #333;
+  font-weight: 800;
+  background-color: transparent;
+  border: 2px solid #333;
   text-align: center;
   color: #ccc;
   position: relative;
@@ -27,6 +28,7 @@
   width: 200px;
   height: 50px;
   border-radius: 10px;
+  backdrop-filter: blur(5px);
 }
 
 .btn:hover {
@@ -42,12 +44,14 @@
   margin-top: 10px;
   font-size: 2rem;
   font-family: "calibri";
+  color: azure;
 }
 
 .profile-description {
   margin-top: 10px;
   font-size: 18px;
   font-family: "calibri";
+  color: beige;
 }
 
 .btns-right {
