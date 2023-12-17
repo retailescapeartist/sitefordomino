@@ -30,26 +30,28 @@
   text-align: center;
 }
 
-button {
-  margin-bottom: 10px;
-  padding: 15px;
-  font-size: 1rem;
+.TwitchLink {
+  display: flex;
+  justify-content: center;
+}
+
+.TwitchLink button {
+  width: 200px;
+  height: 50px;
+  font-size: 14px;
   font-weight: 800;
   background-color: transparent;
   border: 2px solid #333;
-  text-align: center;
   color: #ccc;
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 200px;
-  height: 50px;
+  align-items: center;
+  margin: 0;
   border-radius: 10px;
   backdrop-filter: blur(5px);
 }
 
-button:hover {
+.TwitchLink button:hover {
   background-color: #ccc;
   color: #333;
 }

@@ -7,12 +7,13 @@
 
 .page-title {
   font-size: 28px;
+  font-weight: 900;
   text-align: center;
-  color: #333;
+  color: azure;
 }
 
 .description {
   font-size: 16px;
   line-height: 1.6;
-  color: #666;
+  color: azure;
 }

@@ -1,7 +1,13 @@
 .center-content {
   text-align: center;
   padding: 20px;
-  font-family: "calibri", sans-serif;
+  font-family: "Calibri", sans-serif;
+}
+
+h1,
+h2 {
+  color: azure;
+  margin-top: 20px;
 }
 
 .computer-specs {
@@ -13,32 +19,38 @@
 .new-rig,
 .also-use {
   width: 100%;
-  display: block;
   text-align: center;
 }
 
 .specs-list {
+  max-width: 800px; /* Set a max-width for containment */
+  margin: 0 auto; /* Center the container */
   padding: 20px;
   margin-bottom: 20px;
   width: 100%;
-}
-
-h2 {
-  color: #555;
-  margin-top: 20px;
 }
 
 ul {
   list-style-type: none;
   padding: 0;
   text-align: left;
-  font-family: "calibri", sans-serif;
+  font-family: "Calibri", sans-serif;
 }
 
 li {
   margin-bottom: 15px;
   line-height: 1.5;
-  max-width: 100%;
   word-wrap: break-word;
-  font-family: "calibri", sans-serif;
+  color: azure;
+}
+
+/* Responsive Design for Mobile */
+@media only screen and (max-width: 600px) {
+  .specs-list {
+    padding: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
 }
