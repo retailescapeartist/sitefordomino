@@ -27,10 +27,6 @@ const GameLibraryPage = () => {
   const [popupContent, setPopupContent] = useState("");
   const [showIntro, setShowIntro] = useState(true);
 
-  const handleSearchType = (type) => {
-    setSearchType(type);
-  };
-
   const handleShowAllGames = () => {
     setSearchType("all");
     setSearchTerm("");
