@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Games from "../data.json";
+import GamesData from "../data.json";
 import "./GameLibraryPage.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
@@ -20,6 +20,7 @@ const GameCard = ({ game }) => (
 );
 
 const GameLibraryPage = () => {
+  const Games = GamesData["Game Library Data"];
   const [searchType, setSearchType] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
   const [showPopup, setShowPopup] = useState(false);
