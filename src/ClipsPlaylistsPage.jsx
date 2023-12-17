@@ -1,7 +1,7 @@
 import React from "react";
 import "./ClipsPlaylistsPage.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 import ReactPlayer from "react-player";
 
 const ClipsPlaylistsPage = () => {

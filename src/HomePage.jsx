@@ -1,13 +1,13 @@
 import "./HomePage.css";
 import React from "react";
 import { Link } from "react-router-dom";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import domino from "../../src/assets/img/domino427-logo.png";
-import twitch from "../../src/assets/img/twitch_icon.png";
-import twitter from "../../src/assets/img/twitter_social_icon.png";
-import youtube from "../../src/assets/img/youtube_play_video_icon.png";
-import tiktok from "../../src/assets/img/tiktok_logo_social media_icon.png";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import domino from "../src/assets/img/domino427-logo.png";
+import twitch from "../src/assets/img/twitch_icon.png";
+import twitter from "../src/assets/img/twitter_social_icon.png";
+import youtube from "../src/assets/img/youtube_play_video_icon.png";
+import tiktok from "../src/assets/img/tiktok_logo_social media_icon.png";
 
 const HomePage = () => {
   return (
@@ -48,8 +48,8 @@ const HomePage = () => {
           <div className="main-img">
             <div className="domino-img">
               <img src={domino} alt="" />
-              <h1 className="profile-name">Domino427</h1>
               <p className="profile-description">
+                <h1>Domino427</h1>
                 My name is after the bounty hunter, though I could use some
                 pizza and luck. I'm a Floridian against my will, come rescue me
                 and send snow! I loved working in pediatrics and mental health,

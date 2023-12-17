@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../App.css";
-import dominologo from "../../src/assets/img/domino427-logo-no-dominos.png";
+import "./App.css";
+import dominologo from "../src/assets/img/domino427-logo-no-dominos.png";
 
 const Navbar = () => {
   return (

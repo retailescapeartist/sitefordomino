@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import "./ArtShowcasePage.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 const ArtShowcasePage = () => {
   useEffect(() => {

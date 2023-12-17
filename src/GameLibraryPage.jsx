@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import GamesData from "../data.json";
+import GamesData from "./data.json";
 import "./GameLibraryPage.css";
-import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
-import Controller from "../assets/img/icons8-game-controller-50.png";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
+import Controller from "./assets/img/icons8-game-controller-50.png";
 
 const GameCard = ({ game }) => (
   <div className="card">

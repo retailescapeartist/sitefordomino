@@ -2,14 +2,14 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
-import HomePage from "./Pages/HomePage";
-import SchedulePage from "./Pages/SchedulePage";
-import ArtShowcasePage from "./Pages/ArtShowcasePage";
-import GameReviewsPage from "./Pages/GameReviewsPage";
-import RedemptionsListPage from "./Pages/RedemptionsListPage";
-import ClipsPlaylistsPage from "./Pages/ClipsPlaylistsPage";
-import ComputerSpecsPage from "./Pages/ComputerSpecsPage";
-import GameLibraryPage from "./Pages/GameLibraryPage";
+import HomePage from "./HomePage";
+import SchedulePage from "./SchedulePage";
+import ArtShowcasePage from "./ArtShowcasePage";
+import GameReviewsPage from "./GameReviewsPage";
+import RedemptionsListPage from "./RedemptionsListPage";
+import ClipsPlaylistsPage from "./ClipsPlaylistsPage";
+import ComputerSpecsPage from "./ComputerSpecsPage";
+import GameLibraryPage from "./GameLibraryPage";
 
 const App = () => {
   return (

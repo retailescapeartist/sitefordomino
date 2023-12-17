@@ -40,18 +40,15 @@
   text-align: center;
 }
 
-.profile-name {
-  margin-top: 10px;
-  font-size: 2rem;
-  font-family: "calibri";
-  color: azure;
-}
-
 .profile-description {
   margin-top: 10px;
-  font-size: 18px;
+  font-size: 24px;
   font-family: "calibri";
-  color: beige;
+  font-weight: bold;
+  color: hsl(0, 0%, 100%);
+  backdrop-filter: blur(30px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .btns-right {
