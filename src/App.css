@@ -11,6 +11,7 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 10px 20px;
   font-family: "calibri";
   height: 50px;
 }
@@ -40,7 +41,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid lightblue;
 }
 
 /* footer css */
@@ -59,6 +60,10 @@ a:hover {
   margin-top: 10px;
 }
 
+.footer-text a:hover {
+  border-bottom: 1px solid lightblue;
+}
+
 .footer-container p {
   color: white;
   margin: 0;
@@ -68,6 +73,10 @@ a:hover {
   color: white;
   text-decoration: none;
   margin-right: 10px;
+}
+
+.social-links a:hover {
+  border-bottom: 1px solid lightblue;
 }
 
 /* SchedulePage styling */
@@ -88,14 +97,4 @@ a:hover {
   font-size: 1.2em;
   line-height: 1.5;
   margin-bottom: 15px;
-}
-
-/* Mobile styles */
-@media only screen and (max-width: 960px) {
-  .navbar {
-    width: 100%;
-  }
-  html {
-    background-attachment: fixed;
-  }
 }

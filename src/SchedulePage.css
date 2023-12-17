@@ -5,30 +5,34 @@
   justify-content: space-between;
   gap: 50px;
   font-family: "calibri";
-  border: 1px solid #8b8787;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 2px solid #333;
   box-shadow: rgba(0, 0, 0, 0.4);
-  border-radius: 5px;
   color: azure;
 }
 
 .app-container h1 {
-  border-bottom: 1px solid #8b8787;
+  border-bottom: 2px solid lightblue;
   color: azure;
 }
 
 .app-container p {
   color: azure;
+  font-weight: bolder;
 }
 
 .schedule p {
   text-align: center;
   color: azure;
+  font-weight: bold;
 }
 
 .schedule h1 {
   text-align: center;
-  border-bottom: 1px solid #8b8787;
+  border-bottom: 2px solid lightblue;
   color: azure;
+  font-weight: bolder;
 }
 
 .saturday {

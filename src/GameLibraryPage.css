@@ -26,10 +26,9 @@ input {
   color: azure;
   font-weight: 800;
   margin: 10px;
-  width: 300px;
+  width: 200px;
 }
 
-/* Updated button styles */
 button {
   margin-bottom: 10px;
   padding: 15px;
@@ -49,7 +48,11 @@ button {
   backdrop-filter: blur(5px);
 }
 
-/* New styles for the button container to center the buttons */
+button:hover {
+  background-color: #ccc;
+  color: #333;
+}
+
 .button-container {
   display: flex;
   justify-content: center;
@@ -87,7 +90,7 @@ button {
   margin-bottom: 10px;
   color: azure;
   font-weight: 800;
-  border-bottom: 1px solid azure;
+  border-bottom: 1px solid lightblue;
 }
 
 .card-platform {
@@ -106,4 +109,19 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+/* Media Query for Mobile and Tablets */
+@media only screen and (max-width: 960px) {
+  .search-bar {
+    width: 100%;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    width: 100%;
+  }
 }

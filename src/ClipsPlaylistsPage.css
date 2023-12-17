@@ -1,3 +1,8 @@
+h1,
+h3 {
+  border-bottom: 2px solid lightblue;
+}
+
 .clips-playlists-container {
   display: grid;
   grid-template-rows: auto;
@@ -22,12 +27,18 @@
   grid-area: 2/1;
   text-align: center;
   margin: 20px;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .twitch-clip-cards {
   grid-column: 2 / span 2;
   grid-row: 2;
   text-align: center;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .TwitchLink {
@@ -59,17 +70,26 @@
 .music {
   grid-area: 4/4;
   text-align: center;
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .movies {
   grid-area: 4/1;
   text-align: center;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 .movie-suggestion {
   grid-area: 2/4;
   text-align: center;
   margin: 20px;
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 2px solid #333;
 }
 
 ul {
@@ -86,7 +106,7 @@ ul {
 }
 
 /* Mobile Design */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 960px) {
   /* Styles for screens with a maximum width of 600px or less */
   .clips-playlists-container {
     display: flex;
@@ -103,6 +123,7 @@ ul {
   }
 
   .clip-player {
+    width: 380px;
     margin-bottom: 300px;
   }
 }

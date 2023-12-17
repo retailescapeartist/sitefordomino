@@ -36,7 +36,16 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-text">
-          <p>&copy; 2023 Made by Retailescapeartist</p>
+          <p>
+            &copy; 2023 Made by{" "}
+            <a
+              href="https://daniels-designs.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Retailescapeartist
+            </a>{" "}
+          </p>
         </div>
       </footer>
     </section>

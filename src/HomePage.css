@@ -46,7 +46,7 @@
   font-family: "calibri";
   font-weight: bold;
   color: hsl(0, 0%, 100%);
-  backdrop-filter: blur(30px);
+  backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 2px solid #333;
 }
