@@ -23,6 +23,10 @@ html {
   margin-top: 20px;
 }
 
+.navbar a:hover {
+  border-bottom: 1px solid lightblue;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -38,10 +42,6 @@ li {
 a {
   text-decoration: none;
   color: #ccc;
-}
-
-a:hover {
-  border-bottom: 1px solid lightblue;
 }
 
 /* footer css */

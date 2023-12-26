@@ -30,6 +30,7 @@ h3 {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 .twitch-clip-cards {
@@ -39,6 +40,7 @@ h3 {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 .TwitchLink {
@@ -73,6 +75,7 @@ h3 {
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 .movies {
@@ -81,6 +84,7 @@ h3 {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 .movie-suggestion {
@@ -90,6 +94,7 @@ h3 {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 ul {

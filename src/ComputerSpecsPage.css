@@ -17,6 +17,7 @@ h2 {
   backdrop-filter: blur(10px);
   border-radius: 10px;
   border: 2px solid #333;
+  background-color: hsl(244, 22%, 13%);
 }
 
 .new-rig,
