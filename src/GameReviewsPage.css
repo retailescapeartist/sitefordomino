@@ -18,8 +18,13 @@
 .secondary-review,
 .third-review {
   border: 1px solid #ccc;
-  background-color: lightgray;
+  background-color: hsl(244, 22%, 13%);
   border-radius: 5px;
+}
+
+p {
+  color: white;
+  padding: 10px;
 }
 
 .secondary-review,
