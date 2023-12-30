@@ -10,9 +10,13 @@ const ClipsPlaylistsPage = () => {
       <Navbar />
       <div className="clips-playlists-container">
         <h1 className="page-title">Clips & Playlists</h1>
+        <p className="page-title-description">
+          Here you will find some YouTube clips, Twitch clips, favorite movies,
+          and some favorite music.
+        </p>
         <div className="clip-of-week">
-          <h1 className="content-title">YouTube Clip of The Week</h1>
-          <div className="clip-player">
+          <h3 className="content-title">YouTube Clip of The Week</h3>
+          <div className="clip-player-youtube">
             {/* YouTube video */}
             <ReactPlayer
               url="<https://www.youtube.com/shorts/rFUOuPIir8Q>"
@@ -54,7 +58,7 @@ const ClipsPlaylistsPage = () => {
           </a>
         </div>
         <div className="movies">
-          <h1>Movies</h1>
+          <h3>Movies</h3>
           <ul>
             <li>Megamind</li>
             <li>Into The Woods</li>
@@ -62,7 +66,7 @@ const ClipsPlaylistsPage = () => {
           </ul>
         </div>
         <div className="music">
-          <h1>Music</h1>
+          <h3>Music</h3>
           <ul>
             <li>The Hu</li>
             <li>Steampowered Giraffe</li>
@@ -70,8 +74,8 @@ const ClipsPlaylistsPage = () => {
           </ul>
         </div>
         <div className="movie-suggestion">
-          <h1 className="content-title">Movie Suggestion</h1>
-          <div className="clip-player">
+          <h3 className="content-title">Movie Suggestion</h3>
+          <div className="clip-player-movies">
             {/* Another YouTube video */}
             <ReactPlayer
               url="<https://www.youtube.com/watch?v=Yrn8jnsdhLA>"

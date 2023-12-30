@@ -62,6 +62,11 @@ a {
   font-size: 18px;
 }
 
+.footer-text a {
+  color: azure;
+  font-size: 24px;
+}
+
 .footer-text a:hover {
   border-bottom: 1px solid lightblue;
 }

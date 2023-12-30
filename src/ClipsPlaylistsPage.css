@@ -1,46 +1,43 @@
 h1,
 h3 {
-  border-bottom: 2px solid lightblue;
+  color: white;
+  text-align: center;
 }
 
 .clips-playlists-container {
   display: grid;
-  grid-template-rows: auto;
   grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  align-items: center;
-  margin: 10px 0;
-  padding: 0px;
-  color: azure;
+  grid-template-rows: repeat(4, 1fr);
+  grid-template-areas:
+    "music  a a movies" "music YouTube YouTube movies"
+    "music Twitch Twitch movies" "music suggest suggest movies";
 }
 
 .page-title {
-  grid-column: span 4;
-  align-items: center;
-  justify-self: center;
-  margin: 0;
-  padding: 0;
-  color: azure;
+  grid-area: a;
+}
+
+.page-title-description {
+  grid-area: a;
+  margin-top: 100px;
+  font-size: 18px;
+  font-weight: bold;
 }
 
 .clip-of-week {
-  grid-area: 2/1;
-  text-align: center;
-  margin: 20px;
-  backdrop-filter: blur(5px);
-  border-radius: 10px;
-  border: 2px solid #333;
-  background-color: hsl(244, 22%, 13%);
+  grid-area: YouTube;
+}
+
+.clip-player {
+  grid-area: Youtube;
 }
 
 .twitch-clip-cards {
-  grid-column: 2 / span 2;
-  grid-row: 2;
+  grid-area: Twitch;
   text-align: center;
   backdrop-filter: blur(5px);
   border-radius: 10px;
   border: 2px solid #333;
-  background-color: hsl(244, 22%, 13%);
 }
 
 .TwitchLink {
@@ -54,7 +51,7 @@ h3 {
   font-size: 14px;
   font-weight: 800;
   background-color: transparent;
-  border: 2px solid #333;
+  border: 2px solid #000;
   color: #ccc;
   display: flex;
   justify-content: center;
@@ -70,31 +67,22 @@ h3 {
 }
 
 .music {
-  grid-area: 4/4;
-  text-align: center;
-  backdrop-filter: blur(5px);
+  grid-area: music;
   border-radius: 10px;
   border: 2px solid #333;
   background-color: hsl(244, 22%, 13%);
 }
 
 .movies {
-  grid-area: 4/1;
-  text-align: center;
-  backdrop-filter: blur(10px);
+  grid-area: movies;
+
   border-radius: 10px;
   border: 2px solid #333;
   background-color: hsl(244, 22%, 13%);
 }
 
 .movie-suggestion {
-  grid-area: 2/4;
-  text-align: center;
-  margin: 20px;
-  backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 2px solid #333;
-  background-color: hsl(244, 22%, 13%);
+  grid-area: suggest;
 }
 
 ul {
