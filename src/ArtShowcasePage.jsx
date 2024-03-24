@@ -30,12 +30,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://cdn.discordapp.com/attachments/368111643193901057/1181772913985212567/penup_20231205_173424.jpg?ex=658246ca&is=656fd1ca&hm=dd6fe22f3e2ea57b92d2a39e8b665b64d22ea88ac2db6ac6731eea43f6ad279d&"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1218655348941127720/AncientConstructs.jpg?ex=6611aebc&is=65ff39bc&hm=80a4cbda3448f38ae9e9d64bb8974debac1b70c9a61d801985e0bf20d1f17d49&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">The gift</h1>
-              <p>Artwork done by MrsCrunch</p>
+              <h1 className="art-title">Model Painting</h1>
+              <p>done by Undead</p>
             </div>
           </div>
 
@@ -45,12 +45,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://cdn.discordapp.com/attachments/368111643193901057/1145470522403070042/20230827_141725.jpg?ex=657f688e&is=656cf38e&hm=faded368c19f3c92410da20900941b2f60c6aefbe5aed7520fbfc3a74cc20687&"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1218620372505591848/IMG_20240316_135940969.jpg?ex=66118e29&is=65ff1929&hm=3efc462c85de032c1be8c8f41a3c1ec73c0bef3d3c63fb916d5e9f4f72db7aed&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">Musical Hammerheads</h1>
-              <p>by MrsCrunch</p>
+              <h1 className="art-title">Random Squid Sketch</h1>
+              <p>done by KingSquiddie</p>
             </div>
           </div>
 
@@ -60,12 +60,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://cdn.discordapp.com/attachments/368111643193901057/1143243193685659648/20230821_002810.jpg?ex=658088b1&is=656e13b1&hm=40b2e77fc3641346a8af34f29475bbe1780046f40e4d64df7faa9cb784057816&"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1205341425856675870/cool_dragon.jpg?ex=660f63ae&is=65fceeae&hm=b1f3c90086876496e7cea3cabf1772e5ca2c7478b5f4d85cfe98768b94092408&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">Percila the Chinchilla</h1>
-              <p>By KhromaCat</p>
+              <h1 className="art-title">Dragon with the roses</h1>
+              <p>By MrsCrunch</p>
             </div>
           </div>
 
@@ -75,12 +75,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://cdn.discordapp.com/attachments/368111643193901057/1120017242504036495/attempt-at-a-cat.png?ex=657f1857&is=656ca357&hm=645902fcd0d6a3c6b02d5c6b6ce93a705dd3714a6ab97decbdc91c7dac3d1811&"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1177081512223588413/20231122_184553.jpg?ex=660e1815&is=65fba315&hm=8262f2c67fceee54f4062db0a74cd6061a1cbd6ea7ec2c2da63d8ffdb0e38838&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">Little Kitty</h1>
-              <p>By Retailescapeartist</p>
+              <h1 className="art-title">Sunset Diamond Painting</h1>
+              <p>By MrsCrunch</p>
             </div>
           </div>
 

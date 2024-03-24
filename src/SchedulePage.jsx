@@ -19,22 +19,22 @@ const SchedulePage = () => {
         <div className="schedule">
           <div>
             <h1>Sunday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: OFF</p>
             <p>Game Being Played</p>
           </div>
           <div>
             <h1>Monday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: 2:00pm EST</p>
             <p>Game Being Played</p>
           </div>
           <div>
             <h1>Tuesday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: 2:00pm EST</p>
             <p>Game Being Played</p>
           </div>
           <div>
             <h1>Wednesday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: 2:00pm EST</p>
             <p>Game Being Played</p>
           </div>
           <div>
@@ -44,12 +44,12 @@ const SchedulePage = () => {
           </div>
           <div>
             <h1>Friday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: 2:00pm EST</p>
             <p>Game Being Played</p>
           </div>
           <div className="saturday">
             <h1>Saturday</h1>
-            <p>Stream Time:</p>
+            <p>Stream Time: 2:00pm EST</p>
             <p>Game Being Played</p>
           </div>
         </div>
