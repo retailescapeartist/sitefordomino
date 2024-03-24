@@ -10,3 +10,4 @@
     2. make slideshow cards
     3. make cards that popup
  -->
+<!-- Fix the links on the art page -->
