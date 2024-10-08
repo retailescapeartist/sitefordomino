@@ -30,12 +30,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://cdn.discordapp.com/attachments/368111643193901057/1249888967239925802/20240610_174924.jpg?ex=6678c34f&is=667771cf&hm=83df440d8e0da56a15d5819ff0324f4ed2534a26ce5d836968422f11737c27c2&"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1290379686962266264/20240930_142532.jpg?ex=6706cb3b&is=670579bb&hm=4009cd23d83a65a974ad341506188aef4c01a8e80c99e7823652d4771d46ddca&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">Moons & Cards</h1>
-              <p>done by Mrs_Crunch</p>
+              <h1 className="art-title">Tress and River</h1>
+              <p>done by JayFox</p>
             </div>
           </div>
 
@@ -45,12 +45,12 @@ const ArtShowcasePage = () => {
           >
             <img
               className="gallery-grid-col-2 gallery-grid-row-2"
-              src="https://media.discordapp.net/attachments/368111643193901057/1240769649990307910/Tattoo_Idea_Outline_1.png?ex=66788bc8&is=66773a48&hm=6ccebe91e160574b766bf94925465971c12f438ad50962081320a1f4ce10c3b1&=&format=webp&quality=lossless&width=670&height=468"
+              src="https://cdn.discordapp.com/attachments/368111643193901057/1287977681752686592/20240923_182143.jpg?ex=67069ff0&is=67054e70&hm=abb5610ef286804dee89929953d9a33e9ca9d185e9941000cc46254b3a0da53f&"
               alt=""
             ></img>
             <div className="overlay">
-              <h1 className="art-title">Roses and Moonlight</h1>
-              <p>done by JayFox</p>
+              <h1 className="art-title">Tree Frogs-Coloring page</h1>
+              <p>done by Mrs_Crunch</p>
             </div>
           </div>
 
