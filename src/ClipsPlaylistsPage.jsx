@@ -19,7 +19,7 @@ const ClipsPlaylistsPage = () => {
           <div className="clip-player-youtube">
             {/* YouTube video */}
             <ReactPlayer
-              url="<https://www.youtube.com/shorts/a42Y2YZ1QzA>"
+              url="<https://youtube.com/shorts/NnfyP-YYOvQ>"
               width="100%"
               volume="0"
               controls
