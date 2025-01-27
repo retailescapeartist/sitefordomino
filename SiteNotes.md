@@ -9,5 +9,6 @@
     1. copy the grid layout from art page
     2. make slideshow cards
     3. make cards that popup
+    version 2.0 site revamp
  -->
 <!-- Fix the links on the art page -->
